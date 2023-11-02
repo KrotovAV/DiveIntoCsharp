@@ -48,6 +48,33 @@ namespace ConsoleApp002
             Console.WriteLine(tuple2.b);
             Console.WriteLine(tuple2.c);
 
+            int? abc = null;
+            Console.WriteLine(abc);
+
+
+            byte b = 20;
+            int i = 10;
+            i = b;
+            Console.WriteLine(i);
+
+            int ii = 256;
+            byte bb = 20;
+            bb = (byte)ii;
+            Console.WriteLine(bb);
+
+            object obj1 = new object();
+            object obj2 = new object();
+
+            bool bo = obj1.Equals(obj2);
+            Console.WriteLine(bo);
+
+            string st = "text";
+            char[] ch = st.ToCharArray();
+            foreach (char c in ch)
+            {
+                Console.WriteLine(c);
+            }
+
 
         }
     }
