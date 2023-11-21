@@ -35,7 +35,7 @@ namespace ConsoleApp08
                         Console.WriteLine($"Путь: {path}, строка с искомым текстом: {val}");
                     }
                 }
-            }
+            } 
         }
         public static string InputDirToFind()
         {
@@ -89,16 +89,9 @@ namespace ConsoleApp08
         public static void FinfTextInFileToFind()
         {
             string dir = InputDirToFind();
-
-            if (!Path.Exists(dir))
-            {
-                Console.WriteLine("Указанный путь не существует!!!!");
-                return;
-            }
             string typeFile = InputFileToFind();
             string findText = InputTextToFind();
             FindFileInDirectory(dir, typeFile, findText);
-
         }
 
         static void Main(string[] args)

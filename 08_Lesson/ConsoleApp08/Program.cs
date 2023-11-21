@@ -69,11 +69,11 @@ namespace ConsoleApp08
                 }
             }
         }
+        
         //задача 4
-        public static void ChangeFile(string path, string findWord)
-        {
-            //using (FilFile.Create(path));
-
+        public static void ChangeFileContein(string path, string findWord)
+        {          
+            using (File.Create(path));
         }
 
 
@@ -85,7 +85,6 @@ namespace ConsoleApp08
             Напишите консольную утилиту для копирования файлов 
             Пример запуска: utility.exe file1.txt file2.txt
             */
-
             string wayFile1 = "D:\\GeekBrains\\Exampl.txt";
             string wayFile2 = "D:\\";
             //MyCopyFile(wayFile1, wayFile2);
@@ -95,7 +94,6 @@ namespace ConsoleApp08
             /* Задача 2
             Напишите утилиту рекурсивного поиска файлов в заданном каталоге и подкаталогах
             */
-
             string wayFile21 = "Exampl.txt";
             string wayDir2 = "D:\\GeekBrains\\";
             //FindFileInDirectory(wayDir2, wayFile21);
@@ -111,9 +109,11 @@ namespace ConsoleApp08
             FinfWordInFile(wayFile31, wordToFind2);
 
             /* Задача 4
-            Считать из файла изменить на и срхранить изменения
+            Считать данные из файла, изменить их и сорхранить изменения
             */
-
+            string wayFile41 = "D:\\GeekBrains\\Exampl.txt";
+            string wordToChange = "five";
+            ChangeFileContein(wayFile41, wordToChange);
 
         }
     }
