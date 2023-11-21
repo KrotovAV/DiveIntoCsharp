@@ -1,0 +1,14 @@
+D:\GeekBrains\My Git\DiveIntoCsharp\08_Lesson\ConsoleApp08\obj\Debug\net7.0\ConsoleApp08.GeneratedMSBuildEditorConfig.editorconfig
+D:\GeekBrains\My Git\DiveIntoCsharp\08_Lesson\ConsoleApp08\obj\Debug\net7.0\ConsoleApp08.AssemblyInfoInputs.cache
+D:\GeekBrains\My Git\DiveIntoCsharp\08_Lesson\ConsoleApp08\obj\Debug\net7.0\ConsoleApp08.AssemblyInfo.cs
+D:\GeekBrains\My Git\DiveIntoCsharp\08_Lesson\ConsoleApp08\obj\Debug\net7.0\ConsoleApp08.csproj.CoreCompileInputs.cache
+D:\GeekBrains\My Git\DiveIntoCsharp\08_Lesson\ConsoleApp08\bin\Debug\net7.0\ConsoleApp08.exe
+D:\GeekBrains\My Git\DiveIntoCsharp\08_Lesson\ConsoleApp08\bin\Debug\net7.0\ConsoleApp08.deps.json
+D:\GeekBrains\My Git\DiveIntoCsharp\08_Lesson\ConsoleApp08\bin\Debug\net7.0\ConsoleApp08.runtimeconfig.json
+D:\GeekBrains\My Git\DiveIntoCsharp\08_Lesson\ConsoleApp08\bin\Debug\net7.0\ConsoleApp08.dll
+D:\GeekBrains\My Git\DiveIntoCsharp\08_Lesson\ConsoleApp08\bin\Debug\net7.0\ConsoleApp08.pdb
+D:\GeekBrains\My Git\DiveIntoCsharp\08_Lesson\ConsoleApp08\obj\Debug\net7.0\ConsoleApp08.dll
+D:\GeekBrains\My Git\DiveIntoCsharp\08_Lesson\ConsoleApp08\obj\Debug\net7.0\refint\ConsoleApp08.dll
+D:\GeekBrains\My Git\DiveIntoCsharp\08_Lesson\ConsoleApp08\obj\Debug\net7.0\ConsoleApp08.pdb
+D:\GeekBrains\My Git\DiveIntoCsharp\08_Lesson\ConsoleApp08\obj\Debug\net7.0\ConsoleApp08.genruntimeconfig.cache
+D:\GeekBrains\My Git\DiveIntoCsharp\08_Lesson\ConsoleApp08\obj\Debug\net7.0\ref\ConsoleApp08.dll

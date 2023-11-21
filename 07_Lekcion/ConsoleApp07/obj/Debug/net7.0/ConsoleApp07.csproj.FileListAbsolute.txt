@@ -1,0 +1,14 @@
+D:\GeekBrains\My Git\DiveIntoCsharp\07_Lekcion\ConsoleApp07\bin\Debug\net7.0\ConsoleApp07.exe
+D:\GeekBrains\My Git\DiveIntoCsharp\07_Lekcion\ConsoleApp07\bin\Debug\net7.0\ConsoleApp07.deps.json
+D:\GeekBrains\My Git\DiveIntoCsharp\07_Lekcion\ConsoleApp07\bin\Debug\net7.0\ConsoleApp07.runtimeconfig.json
+D:\GeekBrains\My Git\DiveIntoCsharp\07_Lekcion\ConsoleApp07\bin\Debug\net7.0\ConsoleApp07.dll
+D:\GeekBrains\My Git\DiveIntoCsharp\07_Lekcion\ConsoleApp07\bin\Debug\net7.0\ConsoleApp07.pdb
+D:\GeekBrains\My Git\DiveIntoCsharp\07_Lekcion\ConsoleApp07\obj\Debug\net7.0\ConsoleApp07.GeneratedMSBuildEditorConfig.editorconfig
+D:\GeekBrains\My Git\DiveIntoCsharp\07_Lekcion\ConsoleApp07\obj\Debug\net7.0\ConsoleApp07.AssemblyInfoInputs.cache
+D:\GeekBrains\My Git\DiveIntoCsharp\07_Lekcion\ConsoleApp07\obj\Debug\net7.0\ConsoleApp07.AssemblyInfo.cs
+D:\GeekBrains\My Git\DiveIntoCsharp\07_Lekcion\ConsoleApp07\obj\Debug\net7.0\ConsoleApp07.csproj.CoreCompileInputs.cache
+D:\GeekBrains\My Git\DiveIntoCsharp\07_Lekcion\ConsoleApp07\obj\Debug\net7.0\ConsoleApp07.dll
+D:\GeekBrains\My Git\DiveIntoCsharp\07_Lekcion\ConsoleApp07\obj\Debug\net7.0\refint\ConsoleApp07.dll
+D:\GeekBrains\My Git\DiveIntoCsharp\07_Lekcion\ConsoleApp07\obj\Debug\net7.0\ConsoleApp07.pdb
+D:\GeekBrains\My Git\DiveIntoCsharp\07_Lekcion\ConsoleApp07\obj\Debug\net7.0\ConsoleApp07.genruntimeconfig.cache
+D:\GeekBrains\My Git\DiveIntoCsharp\07_Lekcion\ConsoleApp07\obj\Debug\net7.0\ref\ConsoleApp07.dll
