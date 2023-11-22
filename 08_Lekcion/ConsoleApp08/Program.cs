@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Text;
 
 namespace ConsoleApp08
 {
@@ -95,17 +96,74 @@ namespace ConsoleApp08
             PrintDirictoryInfo(res);
             Console.WriteLine(CalculeteDirectorySize(res));
 
-
-
             Directory.CreateDirectory(current+"/1");
 
             Directory.Delete(current + "/1");
 
             Console.WriteLine(Directory.GetDirectoryRoot(current));
 
-
-
             Console.WriteLine();
+            Console.WriteLine("Stream *********************");
+            Console.WriteLine();
+
+            string current2 = Directory.GetCurrentDirectory();
+            DirectoryInfo? projRoot = GetProjectRoot(current2);
+            
+            if(projRoot == null)
+            {
+                Console.WriteLine("Не могу найти каталог проекта");
+            }
+            Console.WriteLine(projRoot);
+
+            var pathToProgram = Path.Combine(projRoot.FullName, "Program.cs");
+            //Console.WriteLine(pathToProgramm);
+            if (!Path.Exists(pathToProgram))
+            {
+                Console.WriteLine($"{pathToProgram} не найден. Завершаем работу");
+                return;
+            }
+
+            using(FileStream fStream = new FileStream(pathToProgram, FileMode.Open))
+            {
+                Console.WriteLine($"Файл {pathToProgram} открыт");
+
+                byte[] bytes = new byte[fStream.Length];
+                var read = fStream.Read(bytes, 0, bytes.Length);
+
+                if(read == bytes.Length)
+                {
+                    var str = Encoding.Default.GetString(bytes);
+                    Console.WriteLine(str);
+                }
+            }
+
+            var pathNew = Path.ChangeExtension(pathToProgram, ".bak");
+            using (FileStream fStream2 = new FileStream(pathToProgram, FileMode.Open))
+            {
+                using (FileStream fStreamOut2 = new FileStream(pathNew, FileMode.Create, FileAccess.Write))
+                {
+                    //int b = 0;
+                    //while((b = fStream2.ReadByte()) >= 0)
+                    //{
+                    //    fStreamOut2.WriteByte((byte)b);
+                    //}
+
+                    //или проще
+
+                    fStream2.CopyTo(fStreamOut2);
+                    fStreamOut2.Flush();
+                }
+            }
+
+
+
+
+
+
+
+
+
+                Console.WriteLine();
             Console.WriteLine("*********************");
             Console.WriteLine();
         }
