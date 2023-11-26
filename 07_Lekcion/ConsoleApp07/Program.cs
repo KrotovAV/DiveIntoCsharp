@@ -1,6 +1,17 @@
-﻿namespace ConsoleApp07
+﻿using System.Reflection;
+
+namespace ConsoleApp07
 {
-    internal class Program
+    class MyClass1
+    {
+        int MyField = 3;
+        public int MyProperty => MyField;
+        public void SayHello() => Console.WriteLine("Говорю: привет!");
+        public void SayWords(string s) => Console.WriteLine($"Говорю: {s}.");
+        public int IntMethod(int x, int y) => x + y;
+        private int MyIntMethod(int x, int y) => x * y;
+    }
+    class Program
     {
         static void Main(string[] args)
         {
@@ -44,6 +55,64 @@
             Console.WriteLine(type5?.BaseType?.BaseType?.BaseType?.BaseType);
             Console.WriteLine(type5?.BaseType?.BaseType?.BaseType?.BaseType?.BaseType);
             Console.WriteLine(type5?.BaseType?.BaseType?.BaseType?.BaseType?.BaseType?.BaseType);
+            Console.WriteLine();
+
+
+            Console.WriteLine("Доступ к методам **********************************");
+            Console.WriteLine();
+
+            var objMyClass1 = new MyClass1();
+            var type6 = typeof(MyClass1);
+            Console.WriteLine(type6);
+             
+            type6.InvokeMember("SayHello", 
+                BindingFlags.Instance| BindingFlags.Public| BindingFlags.InvokeMethod, 
+                null, 
+                objMyClass1, 
+                new Object[] { });
+
+            var res2 = type6.InvokeMember("SayWords", 
+                BindingFlags.Instance| BindingFlags.Public| BindingFlags.InvokeMethod, 
+                null, 
+                objMyClass1, 
+                new Object[] {"Я тестовое слово!" });
+            Console.WriteLine(res2);
+
+            var res3 = type6.InvokeMember("IntMethod",
+                BindingFlags.Instance | BindingFlags.Public | BindingFlags.InvokeMethod,
+                null,
+                objMyClass1,
+                new Object[] {1, 2});
+            Console.WriteLine(res3);
+
+            var res4 = type6.InvokeMember("MyIntMethod",
+                BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.InvokeMethod,
+                null,
+                objMyClass1,
+                new Object[] {2, 2});
+            Console.WriteLine(res4);
+
+            Console.WriteLine("Доступ к полям и свойствам **********************************");
+            Console.WriteLine();
+
+            var obj2MyClass1 = new MyClass1();
+            var type7 = typeof(MyClass1);
+            Console.WriteLine(type6);
+
+            PropertyInfo? propInfo = type7.GetProperty("MyProperty");
+            Console.WriteLine(propInfo);
+
+            Console.WriteLine(propInfo?.GetValue(obj2MyClass1));
+
+            Console.WriteLine("Атрибуты **********************************");
+            Console.WriteLine();
+
+
+
+
+
+            Console.WriteLine();
+            Console.WriteLine("**********************************");
             Console.WriteLine();
         }
     }
